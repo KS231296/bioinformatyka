@@ -7,7 +7,7 @@ function [filtered] = FilterCorelationAB(corelated,sizer,error)
            if corelated(w,k) ==1                                                   
                foundZeros = 0;                                                  
                for i = 1:sizer-1                                                
-                  if  ~(w+i < rows && k+i < columns && corelated(w+i,k+i) == 1)    
+                  if  ~(w+i < r && k+i < c && corelated(w+i,k+i) == 1)    
                       foundZeros = foundZeros+1;                                
                   end
                end
