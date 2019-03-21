@@ -20,3 +20,4 @@ spy(window)
 title('Dotplot from given data');
 ylabel('A');
 xlabel('B');
+saveas(gcf, 'dotPlot.jpg');
