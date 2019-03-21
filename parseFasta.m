@@ -6,10 +6,10 @@ while length(remain)>0
     [token, remain] = strtok(remain, char(10));
     if length(token)>0 && token(1) == '>'
         n = n+1;
-        FastaSet(n).identifier = token(2:end);
-        FastaSet(n).sequence = '';
+        fastaSet(n).identifier = token(2:end);
+        fastaSet(n).sequence = '';
     elseif n>0
-        FastaSet(n).sequence = strcat(FastaSet(n).sequence, token);
+        fastaSet(n).sequence = strcat(fastaSet(n).sequence, token);
     end
 end
 

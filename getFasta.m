@@ -1,4 +1,4 @@
-function [identifier,sequence]=getFasta(method)
+function parsedFasta=getFasta(method)
 if method==1
     fasta=inputFasta();
 elseif method==2
@@ -11,5 +11,6 @@ else
     disp('Incorrect method ');
     return;
 end
-[identifier,sequence]=parseFasta(fasta);
+parsedFasta = parseFasta(fasta);
+
 end
