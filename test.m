@@ -1,5 +1,6 @@
 clear;
 clc;
+close all;
 
 A = getFasta(2);
 B = getFasta(2);
