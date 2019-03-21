@@ -11,7 +11,7 @@ title('Raw Dotplot from given data');
 
 sizer = input('Choose the size of a window: ');
 error = input('Choose the size of a treshold: ');
-[window] = corelationAB(m,sizer,error);
+[window] = FilterCorelationAB(m,sizer,error);
  
 figure(2)
 spy(window)
