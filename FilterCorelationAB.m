@@ -3,7 +3,7 @@ function [filtered] = FilterCorelationAB(corelated,sizer,error)
     filtered = zeros(size(corelated));                                               
     for w = 1:r
        for k = 1:c                                                        
-%VER IV
+
            if corelated(w,k) ==1                                                   
                foundZeros = 0;                                                  
                for i = 1:sizer-1                                                

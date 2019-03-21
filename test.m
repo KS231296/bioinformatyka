@@ -3,7 +3,7 @@ clc;
 
 A = getFasta(2);
 B = getFasta(2);
-m = charVect(A(1).sequence, B(1).sequence);
+m = corelationAB(A(1).sequence, B(1).sequence);
 figure(1)
 spy(m);
 title('Raw Dotplot from given data');
